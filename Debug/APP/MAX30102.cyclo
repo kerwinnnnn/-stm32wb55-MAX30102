@@ -1,7 +1,5 @@
-../APP/MAX30102.c:30:6:adjust_Current	3
-../APP/MAX30102.c:41:6:max30102_Reg_Write	1
-../APP/MAX30102.c:49:6:max30102_Reg_Read	1
-../APP/MAX30102.c:57:6:max30102_FIFO_ReadBytes	1
-../APP/MAX30102.c:70:6:max30102_Init	1
-../APP/MAX30102.c:87:6:max30102_Safety	3
-../APP/MAX30102.c:99:6:max30102_Calculate_HR_BO_Value	11
+../APP/MAX30102.c:40:6:max30102_Reg_Write	2
+../APP/MAX30102.c:49:6:max30102_Reg_Read	2
+../APP/MAX30102.c:58:6:max30102_FIFO_ReadBytes	2
+../APP/MAX30102.c:72:6:max30102_Init	1
+../APP/MAX30102.c:91:6:max30102_Calculate_HR_BO_Value	10

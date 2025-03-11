@@ -2,6 +2,8 @@
 #define _MAX30102_H
 
 
+
+
 #define max30102_WR_address 0xAE
 
 #define I2C_WRITE_ADDR 0xAE
@@ -40,7 +42,7 @@ void max30102_Init(void);
 
 void max30102_Safety(void);
 
-void max30102_Calculate_HR_BO_Value(int32_t* HR_Value,int8_t* HR_Valid,int32_t* BO_Value,int8_t* BO_Valid);
+void max30102_Calculate_HR_BO_Value(uint8_t* HR_Value,uint8_t* BO_Value);
 
 
 #endif

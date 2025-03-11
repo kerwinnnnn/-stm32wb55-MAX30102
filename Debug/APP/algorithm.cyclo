@@ -1,6 +1,3 @@
-../APP/algorithm.c:78:6:maxim_heart_rate_and_oxygen_saturation	39
-../APP/algorithm.c:270:6:maxim_find_peaks	1
-../APP/algorithm.c:284:6:maxim_peaks_above_min_height	8
-../APP/algorithm.c:315:6:maxim_remove_close_peaks	6
-../APP/algorithm.c:344:6:maxim_sort_ascend	4
-../APP/algorithm.c:362:6:maxim_sort_indices_descend	4
+../APP/algorithm.c:10:14:dc_remove	1
+../APP/algorithm.c:16:14:moving_average_filter	2
+../APP/algorithm.c:33:6:calculate_hr_spo2	21

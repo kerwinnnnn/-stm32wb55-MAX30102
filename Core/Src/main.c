@@ -57,10 +57,10 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-int32_t HR_Value;
-int8_t HR_Valid;
-int32_t BO_Value;
-int8_t BO_Valid;
+uint8_t HR_Value;
+
+uint8_t BO_Value;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -128,8 +128,6 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   max30102_Init();
-  max30102_Safety();
-
 
   while (1)
   {
@@ -139,9 +137,10 @@ int main(void)
     MX_APPE_Process();
 
     /* USER CODE BEGIN 3 */
-    max30102_Calculate_HR_BO_Value(&HR_Value,&HR_Valid, &BO_Value, &BO_Valid);
-    printf("心率：%ld,有效值：%d\n",HR_Value,HR_Valid );
-    printf("血氧浓度值：%ld, 有效值=%d\n",BO_Value, BO_Valid);
+    max30102_Calculate_HR_BO_Value(&HR_Value,&BO_Value);
+    printf("心率：%d\r\n",HR_Value );
+    printf("血氧浓度值：%d\r\n",BO_Value);
+    HAL_Delay(10);
   }
   /* USER CODE END 3 */
 }
